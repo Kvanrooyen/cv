@@ -1,15 +1,23 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import About from './components/About';
+import Experience from './components/Experience';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          This site is currently under construction.
-        </p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+function HomePage() {
+  return (
+    <div>
+      <About />
+      <Experience />
+    </div>
+  );
+}
