@@ -25,9 +25,9 @@ export default function About() {
     };
 
     return (
-        <main className='min-h-screen pt-4'>
+        <main className='pt-4'>
             <div>
-                <section className='container mx-auto lg:w-2/4'>
+                <section className="container mx-auto lg:w-2/4">
                     {author && (
                         <>
                             <div className='text-3xl lg:text-5xl mb-3 text-center'>{author.name}</div>
@@ -61,9 +61,10 @@ export default function About() {
                                     </div>
                                 )}
                             </div>
-                            <div className='px-4 lg:px-6 py-4 lg:py-8 prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto'>
+                            <div className='px-4 lg:px-6 pt-4 lg:pt-8 prose prose-sm sm:prose lg:prose-lg xl:prose-xl'>
                                 {/* Render the bio using BlockContent */}
                                 <BlockContent blocks={author.bio} />
+                                <hr className="my-6 border-t-2 border-gray-600" />
                             </div>
                         </>
                     )}
