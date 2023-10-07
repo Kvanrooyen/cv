@@ -39,7 +39,7 @@ export default function About() {
                                             href={author.github}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-blue-500 hover:underline "
+                                            className="text-blue-800 hover:underline "
                                         >
                                             {formatGitHubLink(author.github)}
                                         </a>
@@ -54,7 +54,7 @@ export default function About() {
                                             href={`mailto:${author.email}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-blue-500 hover:underline"
+                                            className="text-blue-800 hover:underline"
                                         >
                                             {author.email}
                                         </a>
